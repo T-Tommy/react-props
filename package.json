@@ -1,7 +1,6 @@
 {
   "name": "react-props",
   "version": "1.0.0",
-  "description": "",
   "main": "src/index.js",
   "jest": {
     "setupFilesAfterEnv": [
@@ -56,5 +55,14 @@
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Tommy/react-props.git"
+  },
+  "bugs": {
+    "url": "https://github.com/T-Tommy/react-props/issues"
+  },
+  "homepage": "https://github.com/T-Tommy/react-props#readme",
+  "description": ""
 }
