@@ -1,20 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import toHexColor from '../services/rgb-converter';
 
-function toHex(rgb) {
-  let hex = '';
-  for(let n in rgb) {
-    let h = rgb[n].toString(16);
-    if(h.length === 1) h = '0' + h;
-    hex += h;
-  }
-  return '#' + hex.toUpperCase();
-}
 
-function Color({ name, hex, rgb }) {
+function Color({ name, rgb }) {
   const { r, g, b } = rgb;
   const dlStyle = {
-    color: hex || toHex(rgb)
+    color: toHexColor(rgb)
   };
 
   return (
@@ -23,7 +15,7 @@ function Color({ name, hex, rgb }) {
       <dd>{ name }</dd>
 
       <dt>Hex</dt>
-      <dd>{ hex || toHex(rgb) }</dd>
+      <dd>{ toHexColor(rgb) }</dd>
 
       <dt>RGB</dt>
       <dd>Red - { r }</dd>
